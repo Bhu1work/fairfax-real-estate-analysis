@@ -27,4 +27,5 @@ The objective of this project was to build a complete, end-to-end ELT (Extract, 
 7.  Connect Power BI to the `production` schema in your PostgreSQL database.
 
 ## Dashboard Screenshot
-*(It's a great idea to embed a screenshot of your final Power BI dashboard here!)*
+
+![image](https://github.com/user-attachments/assets/3db03261-3aad-4d22-80be-5d886473ec4b)
