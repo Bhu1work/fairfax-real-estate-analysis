@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_real_estate_sales
+    description: "Staging model for Fairfax County real estate sales data. This table cleans and standardizes the raw data."
+    columns:
+      - name: property_id
+        description: "The unique identifier for each sales transaction. This is the primary key."
+        tests:
+          - unique   # We assume every sales transaction row should be unique.
+          - not_null # We assume there should never be a missing property_id.
+
+      - name: sale_price
+        description: "The price the property was sold for."
+        tests:
+          - not_null # A sale must have a price.
+
+      - name: sale_date
+        description: "The date the property was sold."
+        tests:
+          - not_null

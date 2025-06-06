@@ -1,0 +1,119 @@
+[0m18:58:03.118772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9643AECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9653E0690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F965547C50>]}
+
+
+============================== 18:58:03.121405 | 2f8eea00-423f-4004-8366-a656310bc228 ==============================
+[0m18:58:03.121405 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:58:03.122003 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\bhuva\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init real_estate_analytics', 'send_anonymous_usage_stats': 'True'}
+[0m18:58:03.130742 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'WindowsPath'.. Dictionary: {'dir': WindowsPath('C:/Users/bhuva/.dbt')}
+[0m18:58:03.131009 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m18:58:03.132055 [debug] [MainThread]: Starter project path: C:\Users\bhuva\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\include\starter_project
+[0m18:58:03.145898 [info ] [MainThread]: 
+Your new dbt project "real_estate_analytics" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:58:03.146354 [info ] [MainThread]: Setting up your profile.
+[0m18:58:22.260366 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m18:58:22.261750 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\bhuva\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 153, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhuva\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\bhuva\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\main.py", line 477, in init
+    results = task.run()
+  File "C:\Users\bhuva\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bhuva\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 261, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "C:\Users\bhuva\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 243, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m18:58:22.262284 [debug] [MainThread]: Command `dbt init` failed at 18:58:22.262207 after 19.22 seconds
+[0m18:58:22.262478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9655CCD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9655E9130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F9655A1150>]}
+[0m18:58:22.262742 [debug] [MainThread]: Flushing usage events
+[0m18:58:22.322038 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:58:37.652095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002173AACACF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002173BAF0690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002173BC57C50>]}
+
+
+============================== 18:58:37.654866 | 3eda6c51-828a-4ead-a9d9-84357880869c ==============================
+[0m18:58:37.654866 [info ] [MainThread]: Running with dbt=1.9.6
+[0m18:58:37.655288 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\bhuva\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt init real_estate_analytics', 'send_anonymous_usage_stats': 'True'}
+[0m18:58:37.664558 [info ] [MainThread]: A project called real_estate_analytics already exists here.
+[0m18:58:37.665061 [debug] [MainThread]: Command `dbt init` succeeded at 18:58:37.664992 after 0.08 seconds
+[0m18:58:37.665282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002173BCDC8A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002173BCF4B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002173BCAC160>]}
+[0m18:58:37.665519 [debug] [MainThread]: Flushing usage events
+[0m18:58:37.706738 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:09:01.233564 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A9693ACF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A97970690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A97AD7C50>]}
+
+
+============================== 19:09:01.236597 | 2f801f57-fbf5-4234-a1ce-f068a47576e7 ==============================
+[0m19:09:01.236597 [info ] [MainThread]: Running with dbt=1.9.6
+[0m19:09:01.237053 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\bhuva\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m19:09:01.246983 [info ] [MainThread]: dbt version: 1.9.6
+[0m19:09:01.247382 [info ] [MainThread]: python version: 3.13.3
+[0m19:09:01.247648 [info ] [MainThread]: python path: C:\Users\bhuva\AppData\Local\Programs\Python\Python313\python.exe
+[0m19:09:01.247875 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m19:09:01.278830 [info ] [MainThread]: Using profiles dir at C:\Users\bhuva\.dbt
+[0m19:09:01.279256 [info ] [MainThread]: Using profiles.yml file at C:\Users\bhuva\.dbt\profiles.yml
+[0m19:09:01.279777 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\bhuva\OneDrive\Documents\Projects\fairfax-real-estate-analysis\dbt_project.yml
+[0m19:09:01.280283 [info ] [MainThread]: adapter type: postgres
+[0m19:09:01.280526 [info ] [MainThread]: adapter version: 1.9.0
+[0m19:09:01.280730 [info ] [MainThread]: Configuration:
+[0m19:09:01.280880 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:09:01.281074 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:09:01.281288 [info ] [MainThread]: Required dependencies:
+[0m19:09:01.281534 [debug] [MainThread]: Executing "git --help"
+[0m19:09:01.300075 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:09:01.300343 [debug] [MainThread]: STDERR: "b''"
+[0m19:09:01.300533 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:09:01.300763 [info ] [MainThread]: Connection:
+[0m19:09:01.301005 [info ] [MainThread]:   host: localhost
+[0m19:09:01.301196 [info ] [MainThread]:   port: 5432
+[0m19:09:01.301329 [info ] [MainThread]:   user: postgres
+[0m19:09:01.301443 [info ] [MainThread]:   database: fairfax_real_estate
+[0m19:09:01.301622 [info ] [MainThread]:   schema: production
+[0m19:09:01.301786 [info ] [MainThread]:   connect_timeout: 10
+[0m19:09:01.301965 [info ] [MainThread]:   role: None
+[0m19:09:01.302108 [info ] [MainThread]:   search_path: None
+[0m19:09:01.302221 [info ] [MainThread]:   keepalives_idle: 0
+[0m19:09:01.302326 [info ] [MainThread]:   sslmode: None
+[0m19:09:01.302431 [info ] [MainThread]:   sslcert: None
+[0m19:09:01.302566 [info ] [MainThread]:   sslkey: None
+[0m19:09:01.302816 [info ] [MainThread]:   sslrootcert: None
+[0m19:09:01.303015 [info ] [MainThread]:   application_name: dbt
+[0m19:09:01.303139 [info ] [MainThread]:   retries: 1
+[0m19:09:01.303366 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m19:09:01.410673 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m19:09:02.277220 [debug] [MainThread]: Using postgres connection "debug"
+[0m19:09:02.277449 [debug] [MainThread]: On debug: select 1 as id
+[0m19:09:02.277565 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:09:02.309493 [debug] [MainThread]: SQL status: SELECT 1 in 0.032 seconds
+[0m19:09:02.310091 [debug] [MainThread]: On debug: Close
+[0m19:09:02.310284 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:09:02.310664 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:09:02.311014 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\bhuva\OneDrive\Documents\Projects\fairfax-real-estate-analysis\dbt_project.yml> not found
+
+[0m19:09:02.311676 [debug] [MainThread]: Command `dbt debug` failed at 19:09:02.311600 after 1.17 seconds
+[0m19:09:02.311832 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:09:02.311968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A97FB55B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A980604D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022A97C998C0>]}
+[0m19:09:02.312140 [debug] [MainThread]: Flushing usage events
+[0m19:09:02.363970 [debug] [MainThread]: An error was encountered while trying to flush usage events

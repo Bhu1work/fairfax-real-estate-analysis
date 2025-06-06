@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: fairfax_real_estate
+    schema: raw
+    tables:
+      - name: real_estate_sales
